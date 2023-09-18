@@ -1,0 +1,43 @@
+.sidebar {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #dbe9ee;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 56px;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out; /* Firefox 4 */
+  -webkit-transition: all 0.3s ease-out; /* Safari and Chrome */
+  -o-transition: all 0.3s ease-out; /* Opera */
+  -ms-transition: all 0.3s ease-out;
+}
+
+.sidebar-off {
+  /* width: 0px; */
+  translate: 230px;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out; /* Firefox 4 */
+  -webkit-transition: all 0.3s ease-out; /* Safari and Chrome */
+  -o-transition: all 0.3s ease-out; /* Opera */
+  -ms-transition: all 0.3s ease-out;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+  
+.active-sidebar {
+  background-color: #4a6fa5 !important;
+  color: white !important;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #c0d6df;
+  /* color: white; */
+}

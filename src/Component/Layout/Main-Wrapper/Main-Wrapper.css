@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 700px) {
+  .content {margin-left: 0;}
+}
+.content {
+  direction: rtl;
+  margin-right: 200px;
+  margin-top: 15px;
+  padding: 1px 16px;
+  height: 850px;
+  top: 56px;
+  position: fixed;
+  overflow: auto;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out; /* Firefox 4 */
+  -webkit-transition: all 0.3s ease-out; /* Safari and Chrome */
+  -o-transition: all 0.3s ease-out; /* Opera */
+  -ms-transition: all 0.3s ease-out;
+}
+.content-no-sidebar {
+  margin-right: 0px !important;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out; /* Firefox 4 */
+  -webkit-transition: all 0.3s ease-out; /* Safari and Chrome */
+  -o-transition: all 0.3s ease-out; /* Opera */
+  -ms-transition: all 0.3s ease-out;
+}

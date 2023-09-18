@@ -1,0 +1,104 @@
+.project-form-container {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px auto;
+    width: 80%;
+}
+.project-form-container h3 {
+    text-align: center;
+    font-weight: 600;
+}
+.project-form-container form {
+    padding: 10px;
+
+}
+.project-form-container form .form-row {
+    margin: 20px 0;
+}
+form .form-row .input-data {
+    height: 40px;
+    position: relative;
+}
+.input-data input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+    padding: 15px;
+}
+.input-data input:focus {
+    outline: none;
+}
+.input-data input:focus ~ label, .input-data input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #4a6fa5;
+    border: none;
+    margin-top: 10px;
+}
+.input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    left: 0;
+    right: 0;
+}
+.input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #4a6fa5;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.input-data input:focus ~ .underline:before, .input-data input:valid ~ .underline:before {
+    transform: scale(1);
+
+}
+
+form .form-row .select-data label, form .form-row .select-data select{
+    margin: 0px 7px;
+}
+form .form-row .select-data select{
+    outline: none;
+    border: none;
+    width: auto;
+}
+
+.submit-btn button{
+    height: 45px !important;
+    width: 80px !important;
+    justify-content: space-between;
+    background-color: #4f6d7a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    /* z-index: 2; */
+    margin: 10px 10px 0px;
+}
+.submit-btn button:hover{
+    background-color: #4a6fa5;
+}

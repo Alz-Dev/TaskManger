@@ -1,0 +1,31 @@
+.nav-bg {
+    color: white !important;
+    direction: rtl;
+    width: 100%;
+    background-color: #166088;
+    padding: 0px 16px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-bg button {
+    background-color: inherit;
+    box-sizing: border-box;
+    border: none;
+
+}
+p {
+    margin-bottom: 0px !important;
+    padding: 0.5rem;
+}
+
+.nav-link {
+    /* padding-left: 15px !important; */
+    padding-right: 15px !important;
+}
+button span {
+    color: #fff;
+    padding: 0px 10px;
+}

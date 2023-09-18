@@ -1,0 +1,135 @@
+.task-card {
+    box-sizing: border-box;
+    width: 300px;
+    min-height: 100px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
+    margin: 15px 30px 25px 0px ;
+    padding: 15px;
+    display: inline;
+    flex-direction: row;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+ .task-card h3 {
+    font-size: 1.3rem;
+    font-weight: 650;
+    text-align: center;
+    margin: 5px auto;
+    flex-wrap: wrap;
+    line-height: 2.5rem;
+}
+.task-card-description {
+    font-size: 0.9rem;
+    /* font-weight: 250; */
+    text-align: justify;
+    /* color: #363636; */
+    opacity: 85%;
+    margin-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+/* person */
+.task-card-person {
+    display: block;
+    margin: 15px auto 0px;
+    height: fit-content;
+    /* line-height: 1.5rem; */
+    direction: ltr;
+}
+.task-card h5:first-child {
+    display: block;
+    background: none;
+    margin: 0px auto;
+    line-height: 1rem;
+    direction: ltr;
+}
+.task-card h5 {
+    display: inline-block;
+    width: fit-content;
+    background: #95ff91;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 5px auto;
+    font-size: 1.1rem;
+    font-weight: 650;
+    text-align: center;
+    color: Green;
+    padding: 4px;
+    margin: 5px;
+}
+/* project */
+.task-card-project {
+    display: block;
+    margin: 15px auto 0px;
+    height: fit-content;
+    /* line-height: 1.5rem; */
+
+}
+.task-card h4:first-child {
+    display: block;
+    background:  none;
+    margin: 0px auto;
+    line-height: 1rem;
+    direction: ltr;
+}
+.task-card h4 {
+    display:inline-block;
+    width: fit-content;
+    background: rgb(255, 240, 152);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 15px auto;
+    font-size: 1.1rem;
+    font-weight: 650;
+    text-align: center;
+    color: rgb(189, 129, 0);
+    padding: 4px;
+    margin: 5px;
+    direction: rtl;
+}
+
+.task-card-deadline:not(.hover) {
+    direction: rtl;
+    font-size: 1rem;
+    font-weight: 650;
+    text-align: center;
+    color: rgb(230, 69, 69); 
+    margin-top: 15px;
+    /* justify-self: center;
+    align-self: center; */
+}
+
+
+.delete-button-task-card, .edit-button-task-card {
+    display: inline;
+    width: auto;
+    margin: 10px 20px 0px 20px;
+    border: none;
+    background-color: transparent;
+    color: #4f6d7a;
+    /* font-weight: 600; */
+    height: 30px;
+    border-radius: 8px;
+}
+.delete-button-task-card:hover, .edit-button-task-card:hover{
+    color: #dbe9ee;
+}
+
+.task-card:hover, .task-card-description:hover .task-card-deadline:hover {
+    background-color: #c0d6df;
+    /* color: white !important; */
+}
+.mb-70 {
+    margin-bottom: 70px !important;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+.buttons-and-deadline-container {
+    bottom: 15px;
+    position:absolute;
+    margin-right:70px;
+    margin-left:70px;
+}
