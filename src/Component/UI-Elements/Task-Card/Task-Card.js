@@ -32,7 +32,18 @@ const TaskCard = (props) => {
                     )
                 }
             })()}
-            
+            {/* {
+                taskPersonPropLength !== 0 && 
+                    <section className= {
+                        'task-card-person'
+                         + 
+                        `${taskProjectPropLength === 0 && props.taskDelete !== null ? ' mb-70' : ''}`
+                         + 
+                        `${taskProjectPropLength === 0 && props.taskDelete === null  ? ' mb-30' : ''}`}>
+                        <h5>Persons:</h5>
+                        {props.taskPerson}
+                    </section>
+            } */}
             {(() => {
                 if(taskPersonPropLength !== 0 && taskProjectPropLength !== 0) {
                     return (
